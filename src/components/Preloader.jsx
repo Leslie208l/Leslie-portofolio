@@ -86,7 +86,7 @@ const Preloader = ({ onFinished }) => {
                 <a href="https://github.com/Leslie208l" target="_blank" rel="noopener noreferrer" className="dark:hover:text-[#00ffdc] hover:text-cyan-600 transition-all duration-300 transform hover:scale-110">
                   <Github size={32} />
                 </a>
-                <a href="www.linkedin.com/in/leslie-joselin-sosa-villa-80399a32b" target="_blank" rel="noopener noreferrer" className="dark:hover:text-[#00ffdc] hover:text-cyan-600 transition-all duration-300 transform hover:scale-110">
+                <a href="https://www.linkedin.com/in/leslie-sosa-80399a32b" target="_blank" rel="noopener noreferrer" className="dark:hover:text-[#00ffdc] hover:text-cyan-600 transition-all duration-300 transform hover:scale-110">
                   <Linkedin size={32} />
                 </a>
                 <a href="https://www.instagram.com/lesliexvs/" target="_blank" rel="noopener noreferrer" className="dark:hover:text-[#00ffdc] hover:text-cyan-600 transition-all duration-300 transform hover:scale-110">
