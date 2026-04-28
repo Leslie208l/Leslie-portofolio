@@ -8,7 +8,7 @@ const Preloader = ({ onFinished }) => {
   const [showContent, setShowContent] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
   const [isAssetLoaded, setIsAssetLoaded] = useState(false);
-  const fullText = "www.zainahmadfahrezi.me";
+  const fullText = "https://leslie-portofolio.vercel.app/";
 
   const handleAssetLoad = () => {
     setIsAssetLoaded(true);
