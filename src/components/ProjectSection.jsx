@@ -3,14 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from "framer-motion";
 import {
   FaExternalLinkAlt, FaReact, FaNodeJs, FaHtml5, FaCss3Alt,
-  FaJsSquare, FaTools, FaFigma, FaGithub, FaTimes, FaDownload
+  FaJsSquare, FaTools, FaFigma, FaGithub, FaTimes
 } from 'react-icons/fa';
 import {
   SiTailwindcss, SiNextdotjs, SiVercel, SiMongodb,
   SiExpress, SiPostgresql
 } from 'react-icons/si';
 import { PiCodeBold } from "react-icons/pi";
-import { LuBadge } from "react-icons/lu";
 import { LiaLayerGroupSolid } from "react-icons/lia";
 import { useNavbar } from '../contexts/NavbarContext';
 import { supabase } from '../lib/supabase';
@@ -33,7 +32,7 @@ const dummyProjects = [
     description: "Aplicación móvil para gestión de películas con sistema CRUD, navegación Drawer y Stack, diseño moderno y manejo de estados.",
     tech: ["Node.js", "Express", "MongoDB", "JWT"],
     link: "https://tu-demo2.vercel.app",
-    github: "https://github.com/tu-usuario/moviesapp",
+    github: "https://github.com/Leslie208l/moviesapp",
     image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2072&auto=format&fit=crop",
     category: "Web/Apps",
   },
@@ -42,106 +41,9 @@ const dummyProjects = [
     description: "Portafolio profesional con diseño futurista, animaciones avanzadas y experiencia interactiva personalizada.",
     tech: ["Figma", "Storybook"],
     link: "#",
-    github: "https://github.com/tu-usuario/portafolio",
+    github: "https://github.com/Leslie208l/Leslie-portofolio",
     image: "/images/portafolio.png",
     category: "Web/Apps",
-  },
-];
-
-// ===================================
-// DATA SERTIFIKA
-// ===================================
-const userCertificates = [
-  {
-    title: "Belajar Membuat Aplikasi Web dengan React",
-    issuer: "Dicoding Indonesia",
-    date: "Des 2024",
-    link: "/certificates/Belajar Membuat Aplikasi Web dengan React.pdf",
-    image: "/certificate-images/Belajar Membuat Aplikasi Web dengan React.jpg",
-  },
-  {
-    title: "Belajar Dasar Pemrograman JavaScript",
-    issuer: "Dicoding Indonesia",
-    date: "Des 2024",
-    link: "/certificates/Belajar Dasar Pemrograman JavaScript.pdf",
-    image: "/certificate-images/Belajar Dasar Pemrograman JavaScript.jpg",
-  },
-  {
-    title: "Junior Web Developer (BNSP)",
-    issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
-    date: "Sep 2024",
-    link: "/certificates/SERTIFIKAT BNSP JUNIOR WEB DEVELOPER ZAIN AHMAD FAHREZI.jpeg",
-    image: "/certificate-images/SERTIFIKAT BNSP JUNIOR WEB DEVELOPER ZAIN AHMAD FAHREZI.jpg",
-  },
-  {
-    title: "Belajar Membuat Front-End Web untuk Pemula",
-    issuer: "Dicoding Indonesia",
-    date: "Des 2024",
-    link: "/certificates/Belajar Membuat Front-End Web untuk Pemula.pdf",
-    image: "/certificate-images/Belajar Membuat Front-End Web untuk Pemula.jpg",
-  },
-  {
-    title: "Operator Komputer Madya (BNSP)",
-    issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
-    date: "Des 2024",
-    link: "/certificates/Operator Komputer Madya BNSP.jpeg",
-    image: "/certificate-images/Operator Komputer Madya BNSP.jpg",
-  },
-  {
-    title: "Belajar Dasar Data Science",
-    issuer: "Dicoding Indonesia",
-    date: "Okt 2024",
-    link: "/certificates/Belajar Dasar Data Science.pdf",
-    image: "/certificate-images/Belajar Dasar Data Science.jpg",
-  },
-  {
-    title: "Belajar Dasar Structured Query Language (SQL)",
-    issuer: "Dicoding Indonesia",
-    date: "Okt 2024",
-    link: "/certificates/Belajar Dasar Structured Query Language (SQL).pdf",
-    image: "/certificate-images/Belajar Dasar Structured Query Language (SQL).jpg",
-  },
-  {
-    title: "Belajar Dasar AI",
-    issuer: "Dicoding Indonesia",
-    date: "Sep 2024",
-    link: "/certificates/Belajar Dasar AI.pdf",
-    image: "/certificate-images/Belajar Dasar AI.jpg",
-  },
-  {
-    title: "Belajar Dasar Manajemen Proyek",
-    issuer: "Dicoding Indonesia",
-    date: "Sep 2024",
-    link: "/certificates/Belajar Dasar Manajemen Proyek.pdf",
-    image: "/certificate-images/Belajar Dasar Manajemen Proyek.jpg",
-  },
-  {
-    title: "Operator Komputer Madya (VSGA)",
-    issuer: "Digital Talent Scholarship",
-    date: "Agu 2024",
-    link: "/certificates/Operator Komputer Madya VSGA.pdf",
-    image: "/certificate-images/Operator Komputer Madya VSGA.jpg",
-  },
-  {
-    title: "Junior Web Developer (VSGA)",
-    issuer: "Kominfo",
-    date: "Jul 2024",
-    link: "/certificates/Junior Web Developer VSGA.pdf",
-    image: "/certificate-images/Junior Web Developer VSGA.jpg",
-  },
-  {
-    title: "Java Fundamentals",
-    issuer: "Oracle",
-    date: "Jun 2024",
-    link: "/certificates/JAVA FUNDAMENTALS.pdf",
-    image: "/certificate-images/JAVA FUNDAMENTALS.jpg",
-  },
-  {
-    title: "Belajar Dasar Pemrograman Web",
-    issuer: "Dicoding Indonesia",
-    date: "Nov 2023",
-    link: "/certificates/Belajar Dasar Pemrograman Web.pdf",
-    image: "/certificate-images/Belajar Dasar Pemrograman Web.jpg",
   },
 ];
 
@@ -183,58 +85,6 @@ const LineShadowText = ({ children, className, shadowColor = "#4079ff", ...props
     >
       {children}
     </motion.span>
-  );
-};
-
-// ===================================
-// KOMPONEN KARTU SERTIFIKAT
-// ===================================
-const CertificateCard = ({ cert, onClick }) => {
-  return (
-    <motion.div
-      layout
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={{ opacity: 1, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.8 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
-      className="group relative cursor-pointer"
-      whileHover={{ y: -8 }}
-      onClick={() => onClick(cert)}
-    >
-      <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden dark:shadow-lg shadow-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-cyan-400/30 transition-all duration-500">
-        <div className="absolute inset-0">
-          <img src={cert.image} alt={cert.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/60 to-slate-900/30 group-hover:from-slate-900/95 transition-all duration-500"></div>
-        </div>
-        <div className="absolute inset-0 p-5 flex flex-col justify-between">
-          <div className="flex-1 flex items-start justify-between">
-            <div className="bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20">
-              <span className="text-xs font-semibold text-cyan-300 uppercase tracking-wider">{cert.issuer}</span>
-            </div>
-            <div className="bg-emerald-500/20 backdrop-blur-md px-3 py-1.5 rounded-full border border-emerald-400/30">
-              <span className="text-xs font-bold text-emerald-300">{cert.date}</span>
-            </div>
-          </div>
-          <div className="space-y-3">
-            <div>
-              <h3 className="text-lg sm:text-xl font-bold text-white line-clamp-2 leading-tight">{cert.title}</h3>
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2 text-slate-300">
-                <FaDownload className="text-sm" />
-                <span className="text-sm font-medium">View Certificate</span>
-              </div>
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="bg-cyan-500/20 backdrop-blur-md p-2 rounded-full border border-cyan-400/30">
-                  <FaExternalLinkAlt className="text-cyan-300 text-sm" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-500/0 via-transparent to-emerald-500/0 group-hover:from-cyan-500/10 group-hover:to-emerald-500/10 transition-all duration-500"></div>
-      </div>
-    </motion.div>
   );
 };
 
@@ -413,91 +263,17 @@ const ProjectCard = ({ project, onClick }) => {
 };
 
 // ===================================
-// KOMPONEN PREVIEW MODAL SERTIFIKAT
-// ===================================
-const CertificatePreviewModal = ({ certificate, onClose }) => {
-  if (!certificate) return null;
-
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-50 p-4"
-      onClick={onClose}
-    >
-      <motion.div
-        initial={{ scale: 0.9, opacity: 0, y: 50 }}
-        animate={{ scale: 1, opacity: 1, y: 0 }}
-        exit={{ scale: 0.9, opacity: 0, y: 50 }}
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
-        className="relative max-w-4xl w-full dark:bg-slate-900/90 bg-white/95 backdrop-blur-xl rounded-3xl border dark:border-white/10 border-slate-200 shadow-2xl overflow-hidden flex flex-col md:flex-row"
-        onClick={(e) => e.stopPropagation()}
-      >
-        {/* Close Button */}
-        <div className="absolute top-4 right-4 z-20">
-          <button onClick={onClose} className="dark:bg-black/40 bg-slate-200/80 hover:bg-red-500/20 backdrop-blur-md p-2 rounded-full dark:border-white/10 border-slate-300 hover:border-red-500/30 transition-all duration-300 group">
-            <FaTimes className="dark:text-white/70 text-slate-600 group-hover:text-red-500" />
-          </button>
-        </div>
-
-        {/* Image Section */}
-        <div className="w-full md:w-3/5 relative min-h-[300px] md:min-h-[500px] bg-slate-900">
-          <img src={certificate.image} alt={certificate.title} className="absolute inset-0 w-full h-full object-contain p-4 bg-slate-950/50" />
-        </div>
-
-        {/* Content Section */}
-        <div className="w-full md:w-2/5 p-8 flex flex-col justify-center dark:bg-slate-900/50 bg-white">
-          <div className="mb-6">
-            <div className="inline-block px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold tracking-wider mb-4">
-              {certificate.issuer}
-            </div>
-            <h2 className="text-2xl font-bold dark:text-white text-slate-900 mb-2 leading-tight">{certificate.title}</h2>
-            <p className="text-slate-400 font-mono text-sm">{certificate.date}</p>
-          </div>
-
-          <div className="space-y-4 mt-auto">
-            <a
-              href={certificate.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white font-bold rounded-xl transition-all duration-300 shadow-lg hover:shadow-cyan-500/25 group"
-            >
-              <FaDownload className="group-hover:animate-bounce" />
-              <span>Download / View PDF</span>
-            </a>
-
-            <button
-              onClick={onClose}
-              className="w-full px-6 py-3 dark:bg-slate-800 bg-slate-200 dark:hover:bg-slate-700 hover:bg-slate-300 dark:text-slate-300 text-slate-700 font-semibold rounded-xl transition-all duration-300"
-            >
-              Close Preview
-            </button>
-          </div>
-        </div>
-      </motion.div>
-    </motion.div>
-  );
-};
-
-// ===================================
 // KOMPONEN UTAMA SECTION PROJECT
 // ===================================
 function ProjectSection() {
   const [activeTab, setActiveTab] = useState('Projects');
   const [projectCategory, setProjectCategory] = useState('Web/Apps');
-  const [previewCertificate, setPreviewCertificate] = useState(null);
   const [previewProject, setPreviewProject] = useState(null);
   const { hideNavbar, showNavbar } = useNavbar();
 
   // === Database States ===
   const [projectsFromDB, setProjectsFromDB] = useState([]);
-  const [certificatesFromDB, setCertificatesFromDB] = useState([]);
   const [loadingProjects, setLoadingProjects] = useState(true);
-  const [loadingCerts, setLoadingCerts] = useState(true);
-
-  const INITIAL_CERTIFICATES_TO_SHOW = 6;
-  const [visibleCertificatesCount, setVisibleCertificatesCount] = useState(INITIAL_CERTIFICATES_TO_SHOW);
 
   // Fetch projects from database
   useEffect(() => {
@@ -522,36 +298,13 @@ function ProjectSection() {
     fetchProjects();
   }, []);
 
-  // Fetch certificates from database
   useEffect(() => {
-    async function fetchCertificates() {
-      try {
-        const { data, error } = await supabase
-          .from('certificates')
-          .select('*')
-          .order('issue_date', { ascending: false });
-
-        if (error) throw error;
-
-        if (data && data.length > 0) {
-          setCertificatesFromDB(data);
-        }
-      } catch (err) {
-        console.error('❌ Error fetching certificates:', err);
-      } finally {
-        setLoadingCerts(false);
-      }
-    }
-    fetchCertificates();
-  }, []);
-
-  useEffect(() => {
-    if (previewCertificate || previewProject) {
+    if (previewProject) {
       hideNavbar();
     } else {
       showNavbar();
     }
-  }, [previewCertificate, previewProject, hideNavbar, showNavbar]);
+  }, [previewProject, hideNavbar, showNavbar]);
 
   useEffect(() => {
     return () => {
@@ -561,7 +314,6 @@ function ProjectSection() {
 
   const tabs = [
     { id: 'Projects', label: 'Projects', icon: <PiCodeBold className="text-[1.7em] mb-1" /> },
-    { id: 'Certificate', label: 'Certificates', icon: <LuBadge className="text-[1.5em] mb-1" /> },
     { id: 'Tech Stack', label: 'Tech Stack', icon: <LiaLayerGroupSolid className="text-[1.5em] mb-1" /> },
   ];
 
@@ -589,16 +341,6 @@ function ProjectSection() {
     return p.category === projectCategory;
   });
 
-  const activeCertificates = certificatesFromDB.length > 0 ? certificatesFromDB : userCertificates;
-
-  const handleShowMore = () => {
-    setVisibleCertificatesCount(activeCertificates.length);
-  };
-
-  const handleShowLess = () => {
-    setVisibleCertificatesCount(INITIAL_CERTIFICATES_TO_SHOW);
-  };
-
   return (
     <section id="project" className="py-20">
 
@@ -618,7 +360,7 @@ function ProjectSection() {
         <h2 className="text-4xl font-bold font-moderniz">
           <span className="dark:text-[#00ffdc] text-cyan-600"><LineShadowText shadowColor="#00b3a4">PORTFOLIO</LineShadowText></span>
           {' '}
-          <span className="dark:text-white text-slate-800"><LineShadowText shadowColor="#bbbbbb">SHOWCASE</LineShadowText></span>
+          <span className="dark:text-white text-slate-800"><LineShadowText shadowColor="#bbbbbb">LESLIE SOSA</LineShadowText></span>
         </h2>
       </motion.div>
 
@@ -626,7 +368,7 @@ function ProjectSection() {
         <div className="flex justify-center mb-12">
           <motion.div
             layout
-            className="inline-flex w-full max-w-4xl rounded-3xl p-2 shadow-lg border dark:border-slate-800 border-slate-200 dark:bg-gradient-to-r dark:from-[#101624] dark:via-[#0a1627] dark:to-[#0a223a] bg-white backdrop-blur-md"
+            className="inline-flex w-full max-w-2xl rounded-3xl p-2 shadow-lg border dark:border-slate-800 border-slate-200 dark:bg-gradient-to-r dark:from-[#101624] dark:via-[#0a1627] dark:to-[#0a223a] bg-white backdrop-blur-md"
             style={{ boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.18)", backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(12px)" }}
           >
             {tabs.map((tab) => (
@@ -704,10 +446,10 @@ function ProjectSection() {
                         ))
                       ) : (
                         <div className="col-span-full text-center text-slate-400 py-12">
-                          No projects available yet.
+                          No hay proyectos disponibles aún.
                           {projectsFromDB.length === 0 && (
                             <div className="mt-4 text-sm text-cyan-400">
-                              Add projects via Admin Dashboard to see them here!
+                              ¡Agrega proyectos desde el panel de administración!
                             </div>
                           )}
                         </div>
@@ -715,57 +457,6 @@ function ProjectSection() {
                     </div>
                   )}
                 </>
-              )}
-
-              {activeTab === 'Certificate' && (
-                <div className="space-y-8">
-                  {loadingCerts ? (
-                    <div className="flex justify-center py-12">
-                      <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-emerald-400"></div>
-                    </div>
-                  ) : (
-                    <>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                        <AnimatePresence>
-                          {activeCertificates.slice(0, visibleCertificatesCount).map((cert, i) => {
-                            const certData = cert.id ? {
-                              title: cert.title,
-                              issuer: cert.issuer,
-                              date: cert.issue_date ? new Date(cert.issue_date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' }) : '',
-                              link: cert.credential_url || '#',
-                              image: cert.image_url || ''
-                            } : cert;
-
-                            return <CertificateCard key={cert.id || i} cert={certData} onClick={setPreviewCertificate} />;
-                          })}
-                        </AnimatePresence>
-                      </div>
-                      {activeCertificates.length > INITIAL_CERTIFICATES_TO_SHOW && (
-                        <div className="flex justify-center mt-12">
-                          {visibleCertificatesCount < activeCertificates.length ? (
-                            <motion.button
-                              onClick={handleShowMore}
-                              className="group dark:bg-gradient-to-r dark:from-cyan-600 dark:to-emerald-600 dark:hover:from-cyan-500 dark:hover:to-emerald-500 bg-cyan-600 hover:bg-cyan-500 px-8 py-3 rounded-full text-white font-semibold transition-all duration-300 shadow-lg hover:shadow-cyan-500/25"
-                              whileHover={{ scale: 1.05 }}
-                              whileTap={{ scale: 0.95 }}
-                            >
-                              Show More ({activeCertificates.length - visibleCertificatesCount} more)
-                            </motion.button>
-                          ) : (
-                            <motion.button
-                              onClick={handleShowLess}
-                              className="group bg-gradient-to-r from-slate-700 to-slate-800 hover:from-slate-600 hover:to-slate-700 px-8 py-3 rounded-full text-white font-semibold transition-all duration-300 shadow-lg"
-                              whileHover={{ scale: 1.05 }}
-                              whileTap={{ scale: 0.95 }}
-                            >
-                              Show Less
-                            </motion.button>
-                          )}
-                        </div>
-                      )}
-                    </>
-                  )}
-                </div>
               )}
 
               {activeTab === 'Tech Stack' && (
@@ -791,12 +482,6 @@ function ProjectSection() {
       </div>
 
       <AnimatePresence>
-        {previewCertificate && (
-          <CertificatePreviewModal
-            certificate={previewCertificate}
-            onClose={() => setPreviewCertificate(null)}
-          />
-        )}
         {previewProject && (
           <ProjectDetailModal
             project={previewProject}
