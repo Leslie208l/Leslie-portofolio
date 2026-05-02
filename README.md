@@ -1,4 +1,4 @@
-# PROYECTO PORTFOLIO LESLIE SOSA
+# PROYECTO PORTAFOLIO LESLIE SOSA
 
 Este es un proyecto React desarrollado con Vite — una herramienta de construcción moderna con alto rendimiento, soporte de Hot Module Replacement (HMR) y tiempos de desarrollo rápidos. Este proyecto presenta un portfolio interactivo con elementos 3D y animaciones fluidas.
 
@@ -28,8 +28,8 @@ Este es un proyecto React desarrollado con Vite — una herramienta de construcc
 1. **Clona el repositorio:**
 
    ```bash
-   git clone https://github.com/Leslie208l/Leslie-portofolio.git
-   cd Leslie-portofolio
+   git clone https://github.com/Leslie208l/Leslie-portafolio.git
+   cd Leslie-portafolio
    ```
 
 2. **Instala las dependencias:**
