@@ -19,28 +19,27 @@ import { supabase } from '../lib/supabase';
 // ===================================
 const dummyProjects = [
   {
-    title: "Estación Meteorológica Automatizada",
-    description: "Este proyecto consiste en el desarrollo de un sistema de monitoreo climático capaz de registrar y visualizar datos ambientales en tiempo real. La estación utiliza sensores conectados a un microcontrolador ESP32 para medir variables como temperatura, humedad, velocidad del viento y radiación solar.",
-    tech: ["Next.js", "React", "TailwindCSS", "Framer Motion"],
-    link: "https://tu-demo.vercel.app",
-    github: "https://github.com/Leslie208l/Estacion-Meteorologica",
+    title: "Brasa Dorada",
+    description: "La Brasa — un restaurante con estética elegante oscura y dorada"
+    link: "https://brasa-dorada.vercel.app/",
+    github: "https://github.com/Leslie208l/Brasa-dorada",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
     category: "Web/Apps",
   },
   {
-    title: "MoviesApp (React Native)",
-    description: "Aplicación móvil para gestión de películas con sistema CRUD, navegación Drawer y Stack, diseño moderno y manejo de estados.",
-    tech: ["Node.js", "Express", "MongoDB", "JWT"],
+    title: "constructora",
+    description: " edifica Sitio web moderno para constructora, desarrollado con React + Vite",
+   
     link: "https://tu-demo2.vercel.app",
-    github: "https://github.com/Leslie208l/moviesapp",
+    github: "https://github.com/Leslie208l/Constructoraa",
     image: "https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=2072&auto=format&fit=crop",
     category: "Web/Apps",
   },
   {
     title: "Portafolio Personal",
     description: "Portafolio profesional con diseño futurista, animaciones avanzadas y experiencia interactiva personalizada.",
-    tech: ["Figma", "Storybook"],
-    link: "#",
+   
+    link: "https://leslie-portofolio.vercel.app/",
     github: "https://github.com/Leslie208l/Leslie-portofolio",
     image: "/images/portafolio.png",
     category: "Web/Apps",
