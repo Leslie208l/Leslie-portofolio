@@ -514,6 +514,27 @@ footer{position:relative;z-index:1;padding:34px 4%;border-top:1px solid var(--bo
 .flip-container:hover .flip-back {
   pointer-events: auto;
 }
+
+.plinks {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.plink {
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.plink:hover {
+  background: #fff;
+  color: #000;
+}
 </style>
 </head>
 <body>
@@ -652,7 +673,7 @@ footer{position:relative;z-index:1;padding:34px 4%;border-top:1px solid var(--bo
     <!-- Proyecto 1 -->
     <div class="pcard reveal">
       <div class="pthumb">
-        <img class="pthumb-img" src="estacion.png" alt="E-Commerce" id="proj1Img" style="display:none;"/>
+        <img class="pthumb-img" src="Brasa Dorada.png" alt="E-Commerce" id="proj1Img" style="display:none;"/>
         <div class="pthumb-overlay"></div>
         <div class="pthumb-placeholder" id="proj1Placeholder">
           <div class="pnum">01</div>
@@ -660,16 +681,23 @@ footer{position:relative;z-index:1;padding:34px 4%;border-top:1px solid var(--bo
         </div>
       </div>
       <div class="pbody">
-        <div class="ptrow"><span class="ptag">React</span><span class="ptag">Node.js</span><span class="ptag">MongoDB</span></div>
-        <div class="pname" data-i18n="proj1.name">Estación Meteorológica Automatizada</div>
-        <p class="pdesc" data-i18n="proj1.desc">Este proyecto consiste en el desarrollo de un sistema de monitoreo climático capaz de registrar y visualizar datos ambientales en tiempo real. La estación utiliza sensores conectados a un microcontrolador ESP32 para medir variables como temperatura, humedad, velocidad del viento y radiación solar.</p>
+        
+        <div class="pname" data-i18n="proj1.name">Brasa Dorada</div>
+        <p class="pdesc">
+  La Brasa — un restaurante con estética elegante oscura y dorada
+</p>
+
+<div class="plinks">
+  <a href="https://brasa-dorada.vercel.app/" target="_blank" class="plink">Ver Demo</a>
+  <a href="https://github.com/Leslie208l/Brasa-dorada" target="_blank" class="plink">Git Hub</a>
+</div>
       </div>
     </div>
 
     <!-- Proyecto 2 -->
     <div class="pcard reveal" style="transition-delay:.1s">
       <div class="pthumb">
-        <img class="pthumb-img" src="moviesapp.jpg" alt="Dashboard" id="proj2Img" style="display:none;"/>
+        <img class="pthumb-img" src="constructora.png" alt="Dashboard" id="proj2Img" style="display:none;"/>
         <div class="pthumb-overlay"></div>
         <div class="pthumb-placeholder" id="proj2Placeholder">
           <div class="pnum">02</div>
@@ -677,9 +705,16 @@ footer{position:relative;z-index:1;padding:34px 4%;border-top:1px solid var(--bo
         </div>
       </div>
       <div class="pbody">
-        <div class="ptrow"><span class="ptag">React</span><span class="ptag">Tailwind</span><span class="ptag">Chart.js</span></div>
-        <div class="pname" data-i18n="proj2.name">MoviesApp (React Native)</div>
-        <p class="pdesc" data-i18n="proj2.desc">Aplicación móvil para gestión de películas con sistema CRUD, navegación Drawer y Stack, diseño moderno y manejo de estados.</p>
+        
+        <div class="pname" data-i18n="proj2.name">Constructora</div>
+        <p class="pdesc">
+  edifica Sitio web moderno para constructora, desarrollado con React + Vite
+</p>
+
+<div class="plinks">
+  <a href="https://constructoraa.vercel.app/" target="_blank" class="plink">Ver Demo</a>
+  <a href="https://github.com/Leslie208l/Constructoraa" target="_blank" class="plink">Git Hub</a>
+</div>
       </div>
     </div>
 
@@ -694,10 +729,16 @@ footer{position:relative;z-index:1;padding:34px 4%;border-top:1px solid var(--bo
         </div>
       </div>
       <div class="pbody">
-        <div class="ptrow"><span class="ptag">React</span><span class="ptag">Tailwind</span><span class="ptag">i18n</span></div>
+        
         <div class="pname" data-i18n="proj3.name">Portafolio Personal</div>
-        <p class="pdesc" data-i18n="proj3.desc">Portafolio profesional con diseño futurista, animaciones avanzadas y experiencia interactiva personalizada.</p>
-      </div>
+        <p class="pdesc">
+ "Portafolio profesional con diseño futurista, animaciones avanzadas y experiencia interactiva personalizada
+</p>
+
+<div class="plinks">
+  <a href="leslie-portafolio.vercel.app" target="_blank" class="plink">Ver Demo</a>
+  <a href="https://github.com/Leslie208l/Leslie-portafolio" target="_blank" class="plink">Git hub </a>
+</div>
     </div>
 
   </div>
